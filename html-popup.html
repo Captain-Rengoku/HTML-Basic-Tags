@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup</title>
+    <style>
+        .popupMain {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            display: none;
+        }
+        .popup {
+            height: 100px;
+            width: 200px;
+            border: 2px solid black;
+            box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+    <script>
+        function showPopup() {
+            const popup = document.getElementById('popupClass');
+            popup.style.display = "block";
+            // Add an event listener to close the popup when clicking outside
+            document.addEventListener('click', closePopupOutside);
+        }
+
+        function closePopupOutside(event) {
+            const popup = document.getElementById('popupClass');
+            const button = document.getElementById('popupButton');
+            if (event.target !== popup && event.target !== button) {
+                popup.style.display = "none";
+                // Remove the event listener after closing the popup
+                document.removeEventListener('click', closePopupOutside);
+            }
+        }
+    </script>
+</head>
+<body>
+    <button id="popupButton" onclick="showPopup()">Click me to show the popup</button>
+    <div class="popupMain" id="popupClass">
+        <div class="popup">
+           Hello this is a popup
+        </div>
+    </div>
+</body>
+</html>
