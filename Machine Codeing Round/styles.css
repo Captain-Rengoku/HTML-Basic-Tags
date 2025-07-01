@@ -2,7 +2,6 @@ body {
     font-family: Arial, sans-serif;
     padding: 20px;
     background-color: #1d1d1d;
-    color: white;
 }
 
 #header {
@@ -54,6 +53,7 @@ select {
 
 .question-text {
     cursor: pointer;
+    color: white;
     padding: 15px 20px;
     font-size: 18px;
     font-weight:bold;
@@ -64,8 +64,9 @@ select {
 }
 
 .codebox {
-    background-color: #3d3d3d;
+    /* background-color: #000000; */
     border: 1px solid #444;
+    color: black;
     border-radius: 5px;
     margin-inline: 10px;
     padding: 10px;
