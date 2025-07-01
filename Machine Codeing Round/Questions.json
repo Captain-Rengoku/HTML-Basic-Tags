@@ -1,0 +1,1252 @@
+[
+    {
+        "id": 1,
+        "question": "What does HTML stand for?",
+        "answer": "HyperText Markup Language"
+    },
+    {
+        "id": 2,
+        "question": "Who developed HTML and when?",
+        "answer": "Tim Berners-Lee, 1991"
+    },
+    {
+        "id": 3,
+        "question": "What is the basic structure of an HTML document?",
+        "answer": "<!DOCTYPE html>\n<html>\n  <head>\n    <title>Page Title</title>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n  </head>\n  <body>\n    <!-- Content -->\n  </body>\n</html>"
+    },
+    {
+        "id": 4,
+        "question": "What is the use of <!DOCTYPE html>?",
+        "answer": "Defines the document type and version of HTML being used"
+    },
+    {
+        "id": 5,
+        "question": "What is the purpose of the <html> tag?",
+        "answer": "It wraps the entire HTML document"
+    },
+    {
+        "id": 6,
+        "question": "What is the function of the <head> tag?",
+        "answer": "It contains metadata, links to stylesheets, and scripts"
+    },
+    {
+        "id": 7,
+        "question": "What is inside the <head> tag?",
+        "answer": "<meta>, <title>, <link>, <style>, <script>, etc."
+    },
+    {
+        "id": 8,
+        "question": "How do you set the page title in HTML?",
+        "answer": "<title>My Page</title> inside the <head> section"
+    },
+    {
+        "id": 9,
+        "question": "What does the <body> tag contain?",
+        "answer": "The content that displays on the webpage"
+    },
+    {
+        "id": 10,
+        "question": "What are void elements in HTML?",
+        "answer": "Tags that don't require closing, e.g., <br>, <img>, <hr>"
+    },
+    {
+        "id": 11,
+        "question": "What is the difference between block and inline elements?",
+        "answer": "Block takes full width; inline stays within line"
+    },
+    {
+        "id": 12,
+        "question": "How do you write comments in HTML?",
+        "answer": "<!-- This is a comment -->"
+    },
+    {
+        "id": 13,
+        "question": "Are HTML tags case-sensitive?",
+        "answer": "No, but lowercase is standard practice"
+    },
+    {
+        "id": 14,
+        "question": "What is nesting in HTML?",
+        "answer": "Placing elements inside other elements"
+    },
+    {
+        "id": 15,
+        "question": "What happens if you forget to close a tag?",
+        "answer": "Browsers try to auto-correct, but it may cause layout issues"
+    },
+    {
+        "id": 16,
+        "question": "What is the function of the <meta> tag?",
+        "answer": "Defines metadata like charset, viewport, etc."
+    },
+    {
+        "id": 17,
+        "question": "How do you set character encoding?",
+        "answer": "<meta charset=\"UTF-8\">"
+    },
+    {
+        "id": 18,
+        "question": "What is the use of lang=\"en\" in the <html> tag?",
+        "answer": "Specifies the language of the document"
+    },
+    {
+        "id": 19,
+        "question": "What is a self-closing tag?",
+        "answer": "Tags that don't need a closing tag, e.g., <br>, <img>"
+    },
+    {
+        "id": 20,
+        "question": "Is HTML a programming language?",
+        "answer": "No, it's a markup language"
+    },
+    {
+        "id": 21,
+        "question": "What are global attributes in HTML?",
+        "answer": "Attributes usable on any element, e.g., id, class, style"
+    },
+    {
+        "id": 22,
+        "question": "What is semantic HTML?",
+        "answer": "Using tags that describe meaning, like <header>, <section>"
+    },
+    {
+        "id": 23,
+        "question": "What are deprecated HTML tags?",
+        "answer": "Old tags no longer recommended, e.g., <font>, <center>"
+    },
+    {
+        "id": 24,
+        "question": "How to format source code in HTML?",
+        "answer": "Wrap code using <pre> and <code>"
+    },
+    {
+        "id": 25,
+        "question": "How do you define a base URL in HTML?",
+        "answer": "<base href=\"https://example.com/\" />"
+    },
+    {
+        "id": 26,
+        "question": "What are the heading tags in HTML?",
+        "answer": "<h1> through <h6>"
+    },
+    {
+        "id": 27,
+        "question": "How many heading levels are available?",
+        "answer": "6 levels: <h1> to <h6>"
+    },
+    {
+        "id": 28,
+        "question": "Which heading tag has the highest priority?",
+        "answer": "<h1>"
+    },
+    {
+        "id": 29,
+        "question": "How do you make text bold in HTML?",
+        "answer": "<b> or <strong>"
+    },
+    {
+        "id": 30,
+        "question": "How do you make text italic in HTML?",
+        "answer": "<i> or <em>"
+    },
+    {
+        "id": 31,
+        "question": "What is the difference between <b> and <strong>?",
+        "answer": "<strong> adds semantic emphasis; <b> is only visual"
+    },
+    {
+        "id": 32,
+        "question": "What is the difference between <i> and <em>?",
+        "answer": "<em> adds semantic emphasis; <i> is stylistic"
+    },
+    {
+        "id": 33,
+        "question": "What tag is used for underlined text?",
+        "answer": "<u>"
+    },
+    {
+        "id": 34,
+        "question": "How to insert a horizontal line in HTML?",
+        "answer": "<hr />"
+    },
+    {
+        "id": 35,
+        "question": "How to insert a line break?",
+        "answer": "<br />"
+    },
+    {
+        "id": 36,
+        "question": "How to add a paragraph in HTML?",
+        "answer": "<p>Paragraph</p>"
+    },
+    {
+        "id": 37,
+        "question": "How to insert a non-breaking space?",
+        "answer": "&nbsp;"
+    },
+    {
+        "id": 38,
+        "question": "How to define a preformatted text block?",
+        "answer": "<pre>  pre text </pre>"
+    },
+    {
+        "id": 39,
+        "question": "What is the use of <abbr>?",
+        "answer": "Defines an abbreviation with a tooltip, e.g., <abbr title=\"World Health Organization\">WHO</abbr>"
+    },
+    {
+        "id": 40,
+        "question": "What does <mark> do?",
+        "answer": "Highlights text like a highlighter"
+    },
+    {
+        "id": 41,
+        "question": "How to create superscript and subscript text?",
+        "answer": "<sup>Superscript</sup> and <sub>Subscript</sub>"
+    },
+    {
+        "id": 42,
+        "question": "What is the use of the <small> tag?",
+        "answer": "Displays smaller, less important text"
+    },
+    {
+        "id": 43,
+        "question": "What is the purpose of <blockquote>?",
+        "answer": "Used for long quotations from other sources"
+    },
+    {
+        "id": 44,
+        "question": "How do you cite a source in HTML?",
+        "answer": "<cite>Source Title</cite>"
+    },
+    {
+        "id": 45,
+        "question": "What tag is used to display code?",
+        "answer": "<code>code here</code>"
+    },
+    {
+        "id": 46,
+        "question": "How to define keyboard input?",
+        "answer": "<kbd>Ctrl + S</kbd>"
+    },
+    {
+        "id": 47,
+        "question": "How to show computer output in HTML?",
+        "answer": "<samp>Hello, world!</samp>"
+    },
+    {
+        "id": 48,
+        "question": "How do you mark inserted and deleted text?",
+        "answer": "<ins>Inserted</ins> <del>Deleted</del>"
+    },
+    {
+        "id": 49,
+        "question": "What does the <time> tag represent?",
+        "answer": "A machine-readable time/date, e.g., <time datetime=\"2025-07-01\">July 1, 2025</time>"
+    },
+    {
+        "id": 50,
+        "question": "How to visually highlight text?",
+        "answer": "<mark>highlighted text</mark>"
+    },
+    {
+        "id": 51,
+        "question": "How do you create a hyperlink in HTML?",
+        "answer": "<a href=\"https://example.com\">Visit Example</a>"
+    },
+    {
+        "id": 52,
+        "question": "What does the target=\"_blank\" attribute do?",
+        "answer": "Opens the link in a new browser tab or window"
+    },
+    {
+        "id": 53,
+        "question": "How do you create a link to an email address?",
+        "answer": "<a href=\"mailto:someone@example.com\">Email Us</a>"
+    },
+    {
+        "id": 54,
+        "question": "How do you link to an internal section on the same page?",
+        "answer": "<a href=\"#section1\">Go to Section 1</a>"
+    },
+    {
+        "id": 55,
+        "question": "What is a fragment identifier in a URL?",
+        "answer": "The part after # used to jump to an element ID"
+    },
+    {
+        "id": 56,
+        "question": "How do you make an entire image a link?",
+        "answer": "<a href=\"https://example.com\"><img src=\"image.jpg\" /></a>"
+    },
+    {
+        "id": 57,
+        "question": "What is the rel attribute used for in links?",
+        "answer": "Specifies relationship between linked and current document, e.g., rel=\"noopener\""
+    },
+    {
+        "id": 58,
+        "question": "How do you specify a download file link?",
+        "answer": "<a href=\"file.pdf\" download>Download PDF</a>"
+    },
+    {
+        "id": 59,
+        "question": "Can you use JavaScript in href?",
+        "answer": "Yes, e.g., <a href=\"javascript:alert('Hi')\">Click</a>, but not recommended"
+    },
+    {
+        "id": 60,
+        "question": "What tag is used to insert images?",
+        "answer": "<img src=\"image.jpg\" alt=\"Description\" />"
+    },
+    {
+        "id": 61,
+        "question": "What is the alt attribute for?",
+        "answer": "Describes the image for screen readers and shows if image fails to load"
+    },
+    {
+        "id": 62,
+        "question": "How do you set width and height for images?",
+        "answer": "<img src=\"img.jpg\" width=\"300\" height=\"200\" />"
+    },
+    {
+        "id": 63,
+        "question": "What does the figure and figcaption tags do?",
+        "answer": "<figure><img src=\"image.jpg\" /><figcaption>Caption</figcaption></figure>"
+    },
+    {
+        "id": 64,
+        "question": "What video formats are supported in HTML5?",
+        "answer": "Common formats: MP4, WebM, Ogg"
+    },
+    {
+        "id": 65,
+        "question": "How do you embed a video?",
+        "answer": "<video controls><source src=\"movie.mp4\" type=\"video/mp4\"></video>"
+    },
+    {
+        "id": 66,
+        "question": "How do you embed audio?",
+        "answer": "<audio controls><source src=\"sound.mp3\" type=\"audio/mpeg\"></audio>"
+    },
+    {
+        "id": 67,
+        "question": "What is the use of the controls attribute?",
+        "answer": "Displays play, pause, and volume controls"
+    },
+    {
+        "id": 68,
+        "question": "What tag is used to embed YouTube videos?",
+        "answer": "<iframe src=\"https://www.youtube.com/embed/xyz\"></iframe>"
+    },
+    {
+        "id": 69,
+        "question": "How do you make responsive media elements?",
+        "answer": "Use CSS: max-width: 100%; height: auto;"
+    },
+    {
+        "id": 70,
+        "question": "What is the purpose of the track tag?",
+        "answer": "Adds subtitles or captions to video/audio"
+    },
+    {
+        "id": 71,
+        "question": "How do you create an unordered list?",
+        "answer": "<ul><li>Item 1</li><li>Item 2</li></ul>"
+    },
+    {
+        "id": 72,
+        "question": "How do you create an ordered list?",
+        "answer": "<ol><li>First</li><li>Second</li></ol>"
+    },
+    {
+        "id": 73,
+        "question": "What tag is used for list items?",
+        "answer": "<li>"
+    },
+    {
+        "id": 74,
+        "question": "How do you create a description list?",
+        "answer": "<dl><dt>Term</dt><dd>Description</dd></dl>"
+    },
+    {
+        "id": 75,
+        "question": "Can you nest lists inside list items?",
+        "answer": "Yes, e.g., <li>Item<ul><li>Subitem</li></ul></li>"
+    },
+    {
+        "id": 76,
+        "question": "What is the use of the start attribute in <ol>?",
+        "answer": "<ol start=\"5\"> begins numbering at 5"
+    },
+    {
+        "id": 77,
+        "question": "How do you reverse the numbering in an ordered list?",
+        "answer": "<ol reversed>"
+    },
+    {
+        "id": 78,
+        "question": "What is the type attribute in <ol>?",
+        "answer": "Sets numbering style: 1, A, a, I, i"
+    },
+    {
+        "id": 79,
+        "question": "How to style bullet points with CSS?",
+        "answer": "Use list-style-type: square/circle/none;"
+    },
+    {
+        "id": 80,
+        "question": "How do you add custom icons to list items?",
+        "answer": "Use background-image or ::before pseudo-element in CSS"
+    },
+    {
+        "id": 81,
+        "question": "What tag defines a table?",
+        "answer": "<table>"
+    },
+    {
+        "id": 82,
+        "question": "How do you define a table row?",
+        "answer": "<tr>"
+    },
+    {
+        "id": 83,
+        "question": "What tag defines table header cells?",
+        "answer": "<th>"
+    },
+    {
+        "id": 84,
+        "question": "What tag defines table data cells?",
+        "answer": "<td>"
+    },
+    {
+        "id": 85,
+        "question": "How do you add a table caption?",
+        "answer": "<caption>Table Title</caption>"
+    },
+    {
+        "id": 86,
+        "question": "How do you group header, body, and footer in a table?",
+        "answer": "<thead>, <tbody>, <tfoot>"
+    },
+    {
+        "id": 87,
+        "question": "What is the colspan attribute?",
+        "answer": "Allows a cell to span multiple columns: <td colspan=\"2\">"
+    },
+    {
+        "id": 88,
+        "question": "What is the rowspan attribute?",
+        "answer": "Allows a cell to span multiple rows: <td rowspan=\"2\">"
+    },
+    {
+        "id": 89,
+        "question": "How do you create a border in a table?",
+        "answer": "Use CSS: table, th, td { border: 1px solid black; }"
+    },
+    {
+        "id": 90,
+        "question": "What is the scope attribute in tables?",
+        "answer": "Indicates header applies to row/col: <th scope=\"col\">"
+    },
+    {
+        "id": 91,
+        "question": "What tag defines a form?",
+        "answer": "<form>"
+    },
+    {
+        "id": 92,
+        "question": "What attributes are essential in <form>?",
+        "answer": "action, method (GET or POST)"
+    },
+    {
+        "id": 93,
+        "question": "How do you create a text input field?",
+        "answer": "<input type=\"text\" name=\"username\" />"
+    },
+    {
+        "id": 94,
+        "question": "How do you create a password field?",
+        "answer": "<input type=\"password\" name=\"pass\" />"
+    },
+    {
+        "id": 95,
+        "question": "How do you create a radio button?",
+        "answer": "<input type=\"radio\" name=\"gender\" value=\"male\"> Male"
+    },
+    {
+        "id": 96,
+        "question": "How do you create a checkbox?",
+        "answer": "<input type=\"checkbox\" name=\"subscribe\"> Subscribe"
+    },
+    {
+        "id": 97,
+        "question": "How do you create a submit button?",
+        "answer": "<input type=\"submit\" value=\"Submit\">"
+    },
+    {
+        "id": 98,
+        "question": "What tag is used for drop-down selection?",
+        "answer": "<select><option>Option 1</option></select>"
+    },
+    {
+        "id": 99,
+        "question": "How do you create a textarea?",
+        "answer": "<textarea rows=\"4\" cols=\"50\"></textarea>"
+    },
+    {
+        "id": 100,
+        "question": "What is the use of the label tag?",
+        "answer": "<label for=\"id\">Description</label> improves accessibility"
+    },
+    {
+        "id": 101,
+        "question": "What are fieldsets used for in HTML forms?",
+        "answer": "<fieldset> <legend>Group</legend> <input type='text'> </fieldset>"
+    },
+    {
+        "id": 102,
+        "question": "What does the legend tag do?",
+        "answer": "It provides a caption for a <fieldset> element."
+    },
+    {
+        "id": 103,
+        "question": "How do you disable a form input?",
+        "answer": "<input type='text' disabled />"
+    },
+    {
+        "id": 104,
+        "question": "How do you make an input field read-only?",
+        "answer": "<input type='text' readonly />"
+    },
+    {
+        "id": 105,
+        "question": "What does the required attribute do?",
+        "answer": "Forces user to fill in the input before submitting the form."
+    },
+    {
+        "id": 106,
+        "question": "How do you create a file upload field?",
+        "answer": "<input type='file' name='upload' />"
+    },
+    {
+        "id": 107,
+        "question": "How do you create a date picker?",
+        "answer": "<input type='date' />"
+    },
+    {
+        "id": 108,
+        "question": "What is the purpose of the autocomplete attribute?",
+        "answer": "Controls if the browser auto-fills form fields."
+    },
+    {
+        "id": 109,
+        "question": "How do you validate an email field?",
+        "answer": "<input type='email' required />"
+    },
+    {
+        "id": 110,
+        "question": "How do you validate a number range?",
+        "answer": "<input type='number' min='1' max='10' />"
+    },
+    {
+        "id": 111,
+        "question": "What is the pattern attribute used for?",
+        "answer": "It defines a regex for input validation."
+    },
+    {
+        "id": 112,
+        "question": "How do you create a color picker?",
+        "answer": "<input type='color' />"
+    },
+    {
+        "id": 113,
+        "question": "What is the value attribute used for?",
+        "answer": "Sets the default value of an input field."
+    },
+    {
+        "id": 114,
+        "question": "How do you create a form that opens a new tab?",
+        "answer": "<form action='url' target='_blank'>"
+    },
+    {
+        "id": 115,
+        "question": "What is the novalidate attribute?",
+        "answer": "Disables built-in form validation."
+    },
+    {
+        "id": 116,
+        "question": "How do you associate a label with an input?",
+        "answer": "<label for='id'><input id='id'></label>"
+    },
+    {
+        "id": 117,
+        "question": "What is the difference between GET and POST methods?",
+        "answer": "GET appends data to URL; POST sends in request body (more secure)."
+    },
+    {
+        "id": 118,
+        "question": "What does the action attribute specify?",
+        "answer": "The URL where the form data should be submitted."
+    },
+    {
+        "id": 119,
+        "question": "What tag groups several form controls?",
+        "answer": "<fieldset>"
+    },
+    {
+        "id": 120,
+        "question": "How do you reset a form?",
+        "answer": "<input type='reset' />"
+    },
+    {
+        "id": 121,
+        "question": "What is semantic HTML?",
+        "answer": "HTML that describes the meaning of content (e.g. <article>, <section>)."
+    },
+    {
+        "id": 122,
+        "question": "What tag is used for main content?",
+        "answer": "<main>"
+    },
+    {
+        "id": 123,
+        "question": "What tag is used for navigation links?",
+        "answer": "<nav>"
+    },
+    {
+        "id": 124,
+        "question": "What tag defines an independent article?",
+        "answer": "<article>"
+    },
+    {
+        "id": 125,
+        "question": "What is the <section> tag used for?",
+        "answer": "To define grouped content in a page."
+    },
+    {
+        "id": 126,
+        "question": "What tag is used for sidebars?",
+        "answer": "<aside>"
+    },
+    {
+        "id": 127,
+        "question": "What is the role of the <header> tag?",
+        "answer": "Defines a header for a document or section."
+    },
+    {
+        "id": 128,
+        "question": "What does the <footer> tag represent?",
+        "answer": "Defines a footer for a document or section."
+    },
+    {
+        "id": 129,
+        "question": "Is the <div> tag semantic?",
+        "answer": "No, it is a generic container."
+    },
+    {
+        "id": 130,
+        "question": "What tag should be used instead of multiple <div>s for layout?",
+        "answer": "<section>, <article>, <header>, <footer> for semantic clarity."
+    },
+    {
+        "id": 131,
+        "question": "How do you indicate emphasis?",
+        "answer": "<em>Emphasized</em>"
+    },
+    {
+        "id": 132,
+        "question": "What tag is used for strong importance?",
+        "answer": "<strong>Important</strong>"
+    },
+    {
+        "id": 133,
+        "question": "What is ARIA in HTML?",
+        "answer": "Accessible Rich Internet Applications – improves accessibility."
+    },
+    {
+        "id": 134,
+        "question": "How do you define a role for an element?",
+        "answer": "<div role='navigation'>"
+    },
+    {
+        "id": 135,
+        "question": "What does the lang attribute define?",
+        "answer": "The language of the document: <html lang='en'>"
+    },
+    {
+        "id": 136,
+        "question": "What is the use of the title attribute?",
+        "answer": "Shows additional info as a tooltip on hover."
+    },
+    {
+        "id": 137,
+        "question": "How do you define a tooltip for an element?",
+        "answer": "<p title='Tooltip'>Hover me</p>"
+    },
+    {
+        "id": 138,
+        "question": "What is the tabindex attribute?",
+        "answer": "Controls the order of tabbing navigation."
+    },
+    {
+        "id": 139,
+        "question": "How to make an element focusable?",
+        "answer": "Add tabindex='0' or use form elements."
+    },
+    {
+        "id": 140,
+        "question": "What tag is used for contact information?",
+        "answer": "<address>"
+    },
+    {
+        "id": 141,
+        "question": "How do you make a section collapsible?",
+        "answer": "<details><summary>Title</summary>Content</details>"
+    },
+    {
+        "id": 142,
+        "question": "What is the <summary> tag used for?",
+        "answer": "Defines a summary visible for a <details> element."
+    },
+    {
+        "id": 143,
+        "question": "What are custom data-* attributes?",
+        "answer": "User-defined attributes for storing custom data."
+    },
+    {
+        "id": 144,
+        "question": "How do you access data-* attributes in JavaScript?",
+        "answer": "element.dataset.name (for data-name='value')"
+    },
+    {
+        "id": 145,
+        "question": "What is the use of the hidden attribute?",
+        "answer": "Hides the element from view."
+    },
+    {
+        "id": 146,
+        "question": "What does the contenteditable attribute do?",
+        "answer": "Makes an element's content editable."
+    },
+    {
+        "id": 147,
+        "question": "What is the draggable attribute?",
+        "answer": "Allows an element to be dragged using the mouse."
+    },
+    {
+        "id": 148,
+        "question": "How do you disable right-click on a webpage?",
+        "answer": "Use JavaScript: document.addEventListener('contextmenu', e => e.preventDefault());"
+    },
+    {
+        "id": 149,
+        "question": "What are meta tags used for?",
+        "answer": "Provide metadata like description, author, and charset."
+    },
+    {
+        "id": 150,
+        "question": "How do you specify viewport settings?",
+        "answer": "<meta name='viewport' content='width=device-width, initial-scale=1.0'>"
+    },
+    {
+        "id": 151,
+        "question": "What does the <meta charset='UTF-8'> tag do?",
+        "answer": "Specifies the character encoding as UTF-8."
+    },
+    {
+        "id": 152,
+        "question": "How do you define a page description for search engines?",
+        "answer": "<meta name='description' content='Your page description here'>"
+    },
+    {
+        "id": 153,
+        "question": "What is the use of the <meta name='viewport'> tag?",
+        "answer": "Ensures proper scaling on mobile devices."
+    },
+    {
+        "id": 154,
+        "question": "What does <meta http-equiv='refresh'> do?",
+        "answer": "Refreshes or redirects the page after a time interval."
+    },
+    {
+        "id": 155,
+        "question": "What does the http-equiv attribute do?",
+        "answer": "Provides HTTP headers to the browser."
+    },
+    {
+        "id": 156,
+        "question": "What is the use of <base> tag?",
+        "answer": "<base href='https://example.com/'> sets base URL for relative links."
+    },
+    {
+        "id": 157,
+        "question": "How do you add an icon to the browser tab?",
+        "answer": "<link rel='icon' href='favicon.ico'>"
+    },
+    {
+        "id": 158,
+        "question": "What is the <noscript> tag used for?",
+        "answer": "Displays content when JavaScript is disabled."
+    },
+    {
+        "id": 159,
+        "question": "What are conditional comments?",
+        "answer": "Special HTML comments to target specific IE versions (deprecated)."
+    },
+    {
+        "id": 160,
+        "question": "How do you include external CSS?",
+        "answer": "<link rel='stylesheet' href='style.css'>"
+    },
+    {
+        "id": 161,
+        "question": "How do you include internal CSS?",
+        "answer": "<style>body { color: red; }</style>"
+    },
+    {
+        "id": 162,
+        "question": "How do you add inline styles?",
+        "answer": "<p style='color:blue;'>Text</p>"
+    },
+    {
+        "id": 163,
+        "question": "Can you link multiple CSS files?",
+        "answer": "Yes, use multiple <link> tags."
+    },
+    {
+        "id": 164,
+        "question": "What is the <style> tag used for?",
+        "answer": "To write internal CSS rules."
+    },
+    {
+        "id": 165,
+        "question": "What is the difference between class and id?",
+        "answer": "class can be reused; id must be unique in the document."
+    },
+    {
+        "id": 166,
+        "question": "How do you include external JavaScript?",
+        "answer": "<script src='script.js'></script>"
+    },
+    {
+        "id": 167,
+        "question": "How do you write inline JavaScript?",
+        "answer": "<button onclick='alert(\"Clicked!\")'>Click Me</button>"
+    },
+    {
+        "id": 168,
+        "question": "Where should you place <script> tags ideally?",
+        "answer": "At the end of the <body> for better performance."
+    },
+    {
+        "id": 169,
+        "question": "What does defer attribute do in script tag?",
+        "answer": "Delays script execution until after the page loads."
+    },
+    {
+        "id": 170,
+        "question": "What does async attribute do in script tag?",
+        "answer": "Loads script asynchronously without blocking HTML parsing."
+    },
+    {
+        "id": 171,
+        "question": "What is the document object in HTML?",
+        "answer": "Represents the HTML page in the DOM."
+    },
+    {
+        "id": 172,
+        "question": "How do you get an element by ID in JavaScript?",
+        "answer": "document.getElementById('elementId')"
+    },
+    {
+        "id": 173,
+        "question": "What is innerHTML?",
+        "answer": "Property to get or set the HTML content of an element."
+    },
+    {
+        "id": 174,
+        "question": "What is the difference between innerText and textContent?",
+        "answer": "innerText respects styles; textContent returns all text including hidden."
+    },
+    {
+        "id": 175,
+        "question": "How do you create a button in HTML?",
+        "answer": "<button>Click</button>"
+    },
+    {
+        "id": 176,
+        "question": "How do you disable a button?",
+        "answer": "<button disabled>Disabled</button>"
+    },
+    {
+        "id": 177,
+        "question": "What is the <script> tag used for?",
+        "answer": "To embed or reference JavaScript code."
+    },
+    {
+        "id": 178,
+        "question": "How do you comment in HTML?",
+        "answer": "<!-- This is a comment -->"
+    },
+    {
+        "id": 179,
+        "question": "Can HTML tags be nested?",
+        "answer": "Yes, but they must be properly closed in order."
+    },
+    {
+        "id": 180,
+        "question": "What are void (self-closing) tags?",
+        "answer": "Tags that don't require a closing tag, e.g., <br>, <img>, <hr>"
+    },
+    {
+        "id": 181,
+        "question": "What are ARIA roles?",
+        "answer": "Attributes that improve accessibility for screen readers."
+    },
+    {
+        "id": 182,
+        "question": "What is a viewport?",
+        "answer": "The visible area of a web page on a device screen."
+    },
+    {
+        "id": 183,
+        "question": "How do you specify language for HTML page?",
+        "answer": "<html lang='en'>"
+    },
+    {
+        "id": 184,
+        "question": "What is a favicon?",
+        "answer": "A small icon shown in the browser tab."
+    },
+    {
+        "id": 185,
+        "question": "How do you create a modal popup in HTML?",
+        "answer": "Use <dialog> or custom <div> with JS and CSS."
+    },
+    {
+        "id": 186,
+        "question": "How to embed a Google Map?",
+        "answer": "<iframe src='https://maps.google.com/...'></iframe>"
+    },
+    {
+        "id": 187,
+        "question": "What does <canvas> do?",
+        "answer": "Provides an area for drawing graphics using JavaScript."
+    },
+    {
+        "id": 188,
+        "question": "How to detect mobile device in HTML?",
+        "answer": "Use meta viewport and responsive design in CSS/JS."
+    },
+    {
+        "id": 189,
+        "question": "What does the <dialog> tag do?",
+        "answer": "Creates a popup dialog box (HTML5)."
+    },
+    {
+        "id": 190,
+        "question": "How to make HTML5 elements work in older browsers?",
+        "answer": "Use HTML5 Shiv or polyfills."
+    },
+    {
+        "id": 191,
+        "question": "What is accessibility in web development?",
+        "answer": "Designing websites usable for all, including people with disabilities."
+    },
+    {
+        "id": 192,
+        "question": "What is the role of alt text in accessibility?",
+        "answer": "Describes images to screen readers."
+    },
+    {
+        "id": 193,
+        "question": "What is the <template> tag used for?",
+        "answer": "Holds client-side content that is not rendered when the page loads."
+    },
+    {
+        "id": 194,
+        "question": "What are semantic elements?",
+        "answer": "Elements that clearly describe their meaning, e.g., <article>, <footer>."
+    },
+    {
+        "id": 195,
+        "question": "What is the difference between <b> and <strong>?",
+        "answer": "<b> is stylistic, <strong> has semantic meaning for importance."
+    },
+    {
+        "id": 196,
+        "question": "What is the <output> element?",
+        "answer": "Represents the result of a calculation."
+    },
+    {
+        "id": 197,
+        "question": "What is cross-origin resource sharing (CORS)?",
+        "answer": "A security feature to allow/disallow resource requests across domains."
+    },
+    {
+        "id": 198,
+        "question": "What is progressive enhancement?",
+        "answer": "Design strategy focusing on core content first, then enhancements."
+    },
+    {
+        "id": 199,
+        "question": "What is graceful degradation?",
+        "answer": "Designing for modern features but still working on older browsers."
+    },
+    {
+        "id": 200,
+        "question": "What are the three main components of HTML structure?",
+        "answer": "<!DOCTYPE html>, <html>, <head>, and <body>"
+    },
+    {
+        "id": 201,
+        "question": "What is the purpose of the <details> tag?",
+        "answer": "To create a collapsible content section."
+    },
+    {
+        "id": 202,
+        "question": "What does the <summary> tag do inside <details>?",
+        "answer": "Defines the visible heading for the collapsible section."
+    },
+    {
+        "id": 203,
+        "question": "What is the <data> tag used for?",
+        "answer": "Links machine-readable value with human-readable content."
+    },
+    {
+        "id": 204,
+        "question": "What is the difference between <output> and <span>?",
+        "answer": "<output> is used for displaying results of calculations."
+    },
+    {
+        "id": 205,
+        "question": "What is the <template> tag used for?",
+        "answer": "Holds HTML that is not rendered until activated by JavaScript."
+    },
+    {
+        "id": 206,
+        "question": "What is a custom data-* attribute?",
+        "answer": "Allows embedding custom data attributes in HTML: data-name='value'"
+    },
+    {
+        "id": 207,
+        "question": "How do you access a data-* attribute in JS?",
+        "answer": "element.dataset.name"
+    },
+    {
+        "id": 208,
+        "question": "What does the <menu> tag represent?",
+        "answer": "A list or menu of commands (not commonly used)."
+    },
+    {
+        "id": 209,
+        "question": "What is the <command> tag?",
+        "answer": "Represents a user command (deprecated in HTML5)."
+    },
+    {
+        "id": 210,
+        "question": "What is the <progress> element?",
+        "answer": "Displays the progress of a task."
+    },
+    {
+        "id": 211,
+        "question": "What is the <meter> element?",
+        "answer": "Represents a scalar measurement within a known range."
+    },
+    {
+        "id": 212,
+        "question": "What does the <mark> tag do?",
+        "answer": "Highlights text for reference."
+    },
+    {
+        "id": 213,
+        "question": "What does the <bdi> tag do?",
+        "answer": "Isolates a span of text that might be formatted in a different direction."
+    },
+    {
+        "id": 214,
+        "question": "What is the <bdo> tag used for?",
+        "answer": "Overrides the current text direction."
+    },
+    {
+        "id": 215,
+        "question": "What does the <wbr> tag do?",
+        "answer": "Suggests a line break opportunity."
+    },
+    {
+        "id": 216,
+        "question": "How do you embed an audio file?",
+        "answer": "<audio controls><source src='audio.mp3' type='audio/mpeg'></audio>"
+    },
+    {
+        "id": 217,
+        "question": "How do you embed a video file?",
+        "answer": "<video controls><source src='video.mp4' type='video/mp4'></video>"
+    },
+    {
+        "id": 218,
+        "question": "What is the <track> tag used for?",
+        "answer": "Provides text tracks for video/audio (e.g. subtitles)."
+    },
+    {
+        "id": 219,
+        "question": "What does the preload attribute do for media?",
+        "answer": "Hints how the browser should load the media (none, metadata, auto)."
+    },
+    {
+        "id": 220,
+        "question": "What does the autoplay attribute do?",
+        "answer": "Media starts playing automatically when page loads."
+    },
+    {
+        "id": 221,
+        "question": "What does muted mean in media elements?",
+        "answer": "Starts the media with audio muted."
+    },
+    {
+        "id": 222,
+        "question": "How do you embed a PDF file?",
+        "answer": "<embed src='file.pdf' type='application/pdf' width='100%' height='500px'>"
+    },
+    {
+        "id": 223,
+        "question": "How to embed SVG in HTML?",
+        "answer": "<svg><circle cx='50' cy='50' r='40' /></svg>"
+    },
+    {
+        "id": 224,
+        "question": "What is the use of <object> tag?",
+        "answer": "Embeds external resources like PDFs, Flash, etc."
+    },
+    {
+        "id": 225,
+        "question": "How do you add accessibility labels?",
+        "answer": "Using aria-label, alt, role, etc."
+    },
+    {
+        "id": 226,
+        "question": "What is a polyfill?",
+        "answer": "A JS snippet that replicates a missing browser feature."
+    },
+    {
+        "id": 227,
+        "question": "How do you write conditional HTML for IE?",
+        "answer": "<!--[if IE]> Special content <![endif]-->"
+    },
+    {
+        "id": 228,
+        "question": "What are meta viewport settings?",
+        "answer": "<meta name='viewport' content='width=device-width, initial-scale=1.0'>"
+    },
+    {
+        "id": 229,
+        "question": "How do you prevent form submission?",
+        "answer": "Use event.preventDefault() in JavaScript."
+    },
+    {
+        "id": 230,
+        "question": "What does contenteditable do?",
+        "answer": "Allows users to edit the content of an element."
+    },
+    {
+        "id": 231,
+        "question": "How to create a tooltip in HTML?",
+        "answer": "<span title='Tooltip text'>Hover me</span>"
+    },
+    {
+        "id": 232,
+        "question": "How to lazy load images in HTML?",
+        "answer": "<img src='image.jpg' loading='lazy' />"
+    },
+    {
+        "id": 233,
+        "question": "How to preload key resources?",
+        "answer": "<link rel='preload' href='main.css' as='style'>"
+    },
+    {
+        "id": 234,
+        "question": "What is the difference between defer and async?",
+        "answer": "defer waits until DOM is parsed; async runs as soon as it's downloaded."
+    },
+    {
+        "id": 235,
+        "question": "What is a shadow DOM?",
+        "answer": "Encapsulated DOM subtree used in Web Components."
+    },
+    {
+        "id": 236,
+        "question": "What is the <slot> tag used for?",
+        "answer": "Defines placeholders for Web Component content."
+    },
+    {
+        "id": 237,
+        "question": "How do you define a custom element?",
+        "answer": "Use JavaScript: customElements.define('my-tag', class extends HTMLElement {})"
+    },
+    {
+        "id": 238,
+        "question": "What are web components?",
+        "answer": "Reusable, encapsulated custom HTML elements."
+    },
+    {
+        "id": 239,
+        "question": "How do you detect HTML5 support?",
+        "answer": "Use Modernizr library."
+    },
+    {
+        "id": 240,
+        "question": "What is a DOCTYPE declaration?",
+        "answer": "Tells the browser which HTML version to use."
+    },
+    {
+        "id": 241,
+        "question": "Why is semantic HTML important?",
+        "answer": "Improves accessibility, SEO, and code readability."
+    },
+    {
+        "id": 242,
+        "question": "What are microdata attributes?",
+        "answer": "Used to label content with machine-readable metadata."
+    },
+    {
+        "id": 243,
+        "question": "What is the itemprop attribute?",
+        "answer": "Defines the property of an item in microdata."
+    },
+    {
+        "id": 244,
+        "question": "What is the itemscope attribute?",
+        "answer": "Creates a new item in microdata."
+    },
+    {
+        "id": 245,
+        "question": "How to define a schema in HTML?",
+        "answer": "<div itemscope itemtype='https://schema.org/Person'>"
+    },
+    {
+        "id": 246,
+        "question": "What is <script type='application/ld+json'> used for?",
+        "answer": "For adding structured data using JSON-LD format."
+    },
+    {
+        "id": 247,
+        "question": "What is the <noscript> tag for?",
+        "answer": "Displays fallback content when JavaScript is disabled."
+    },
+    {
+        "id": 248,
+        "question": "How to test HTML accessibility?",
+        "answer": "Use tools like Lighthouse, axe, or screen readers."
+    },
+    {
+        "id": 249,
+        "question": "What are inert elements?",
+        "answer": "Elements marked as inert are ignored by assistive technologies and not interactive."
+    },
+    {
+        "id": 250,
+        "question": "What are some best practices for writing HTML?",
+        "answer": "Use semantic tags, alt text, structured nesting, and follow accessibility guidelines."
+    }
+]

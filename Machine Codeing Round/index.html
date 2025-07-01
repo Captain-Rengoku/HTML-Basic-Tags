@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Questions by Category</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .question-text {
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .answer {
+            padding-top: 8px;
+        }
+        .codebox {
+            background-color: #f4f4f4;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            font-family: monospace;
+            white-space: pre-wrap;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <h1>HTML Interview Questions</h1>
+        <select id="categorySelect">
+            <option value="all">All Categories</option>
+            <option value="basics">HTML Basics</option>
+            <option value="TextAndHeadings">Text & Headings</option>
+            <option value="links">Links and Anchors</option>
+            <option value="images">Images & Media</option>
+            <option value="lists">Lists</option>
+            <option value="tables">Tables</option>
+            <option value="forms">Forms</option>
+            <option value="semantic">Semantic HTML & Structure</option>
+            <option value="meta">Meta Tags & Advanced</option>
+        </select>
+    </header>
+    <div id="questionsContainer"></div>
+
+    <script>
+        const questionsByCategory = {
+            basics: [1, 25],
+            TextAndHeadings: [26, 50],
+            links: [51, 75],
+            images: [76, 100],
+            lists: [101, 125],
+            tables: [126, 150],
+            forms: [151, 200],
+            semantic: [201, 225],
+            meta: [226, 250]
+        };
+
+        let allQuestions = [];
+
+        fetch('Questions.json')
+            .then(res => res.json())
+            .then(data => {
+                allQuestions = data;
+                displayQuestions('all');
+            });
+
+        document.getElementById('categorySelect').addEventListener('change', (e) => {
+            displayQuestions(e.target.value);
+        });
+
+        function displayQuestions(category) {
+            const container = document.getElementById('questionsContainer');
+            container.innerHTML = '';
+            const [start, end] = questionsByCategory[category] || [1, 250];
+            const filtered = allQuestions.filter(q => q.id >= start && q.id <= end);
+
+            const questionsToShow = category === 'all' ? allQuestions : filtered;
+
+            questionsToShow.forEach(q => {
+                const questionDiv = document.createElement('div');
+                questionDiv.className = 'question';
+
+                const questionText = document.createElement('div');
+                questionText.className = 'question-text';
+                questionText.textContent = `${q.id}. ${q.question}`;
+
+                const answerDiv = document.createElement('div');
+                answerDiv.className = 'answer';
+                answerDiv.style.display = 'block';
+
+                const codeBox = document.createElement('div');
+                codeBox.className = 'codebox';
+                codeBox.textContent = q.answer || 'Answer not available.';
+
+                answerDiv.appendChild(codeBox);
+
+                questionText.addEventListener('click', () => {
+                    answerDiv.style.display = answerDiv.style.display === 'block' ? 'none' : 'block';
+                });
+
+                questionDiv.appendChild(questionText);
+                questionDiv.appendChild(answerDiv);
+                container.appendChild(questionDiv);
+            });
+        }
+    </script>
+</body>
+
+</html>

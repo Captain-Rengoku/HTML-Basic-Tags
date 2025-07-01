@@ -1,0 +1,169 @@
+<!-- Major Concepts -->
+
+<!-- 1. Semantic Elements -->
+<!-- Semantic tags provide meaning to the content and improve accessibility and SEO -->
+<header>
+    <h1>Welcome to My Website</h1>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <article>
+        <h2>HTML5 is Amazing!</h2>
+        <p>Learn about the new features in HTML5...</p>
+    </article>
+</main>
+
+<footer>
+    <p>&copy; 2025 My Website</p>
+</footer>
+
+<!-- 2. Multimedia Support -->
+<!-- Native audio and video support without plugins like Flash -->
+<video controls>
+    <source src="video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<audio controls>
+    <source src="audio.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+</audio>
+
+<!-- 3. Forms and Input Types -->
+<!-- New input types such as email, date, and range to improve form functionality -->
+<form>
+    <label for="email">Email:</label>
+    <input type="email" id="email" required>
+
+    <label for="birthdate">Birthdate:</label>
+    <input type="date" id="birthdate">
+
+    <label for="range">Age Range:</label>
+    <input type="range" id="range" min="18" max="100" step="1">
+
+    <button type="submit">Submit</button>
+</form>
+
+<!-- 4. Canvas and SVG -->
+<!-- The canvas element allows drawing graphics, and SVG for scalable vector graphics -->
+<canvas id="myCanvas" width="200" height="200"></canvas>
+<script>
+    var canvas = document.getElementById('myCanvas');
+    var ctx = canvas.getContext('2d');
+    ctx.fillStyle = 'blue';
+    ctx.fillRect(20, 20, 150, 100);
+</script>
+
+<svg width="100" height="100">
+    <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+</svg>
+
+<!-- 5. Offline Storage and Local Storage -->
+<!-- Use localStorage and sessionStorage for saving data on the client side -->
+<button onclick="saveData()">Save Data</button>
+<script>
+    function saveData() {
+        localStorage.setItem('username', 'JohnDoe');
+        alert('Data Saved!');
+    }
+</script>
+
+<!-- 6. Geolocation -->
+<!-- Get the user's geographic location using the Geolocation API -->
+<button onclick="getLocation()">Get Location</button>
+<p id="location"></p>
+<script>
+    function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+            alert("Geolocation is not supported by this browser.");
+        }
+    }
+    function showPosition(position) {
+        document.getElementById("location").innerHTML =
+            "Latitude: " + position.coords.latitude +
+            "<br>Longitude: " + position.coords.longitude;
+    }
+</script>
+
+<!-- 7. Web Workers -->
+<!-- Run JavaScript in the background thread without blocking the main UI -->
+<button onclick="startWorker()">Start Worker</button>
+<script>
+    var worker;
+    function startWorker() {
+        if (typeof (Worker) !== "undefined") {
+            worker = new Worker("worker.js");
+            worker.onmessage = function (event) {
+                alert("Worker says: " + event.data);
+            };
+            worker.postMessage("Hello Worker!");
+        } else {
+            alert("Sorry, your browser does not support Web Workers.");
+        }
+    }
+</script>
+
+<!-- 8. WebSockets -->
+<!-- Full-duplex communication between the client and server over a single connection -->
+<script>
+    var socket = new WebSocket("ws://example.com/socketserver");
+    socket.onopen = function () {
+        socket.send("Hello Server!");
+    };
+    socket.onmessage = function (event) {
+        alert("Message from server: " + event.data);
+    };
+</script>
+
+<!-- Minor Concepts -->
+
+<!-- 1. New Elements for Structure and Layout -->
+<!-- HTML5 adds elements like <figure>, <figcaption>, <details>, and <summary> for better structure -->
+<figure>
+    <img src="image.jpg" alt="An image">
+    <figcaption>A beautiful sunset.</figcaption>
+</figure>
+
+<details>
+    <summary>More Info</summary>
+    <p>This is additional information.</p>
+</details>
+
+<!-- 2. Custom Data Attributes -->
+<!-- Store custom data in elements using data-* attributes -->
+<div data-user-id="12345">User Info</div>
+<script>
+    var element = document.querySelector('[data-user-id]');
+    console.log(element.getAttribute('data-user-id'));  // Outputs 12345
+</script>
+
+<!-- 3. Deprecated Elements and Attributes -->
+<!-- Some elements like <font> and <center> are now deprecated in favor of CSS -->
+<font color="red">This text is red.</font> <!-- Deprecated in HTML5 -->
+
+<!-- 4. Progress and Meter Elements -->
+<!-- <progress> displays progress and <meter> displays a value within a range -->
+<progress value="50" max="100"></progress>
+<meter value="0.7" min="0" max="1"></meter>
+
+<!-- 5. Datalist -->
+<!-- Provides a list of predefined options for input elements -->
+<input list="browsers" name="browser" id="browser">
+<datalist id="browsers">
+    <option value="Chrome">
+    <option value="Firefox">
+    <option value="Safari">
+    <option value="Edge">
+</datalist>
+
+<!-- 6. Lazy Loading -->
+<!-- Lazy loading images and iframes to improve page performance -->
+<img src="large-image.jpg" loading="lazy" alt="Lazy loaded image">
