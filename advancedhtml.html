@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            display: inline-block;
+            border: none;
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            font-size: 1rem;
+            line-height: 1;
+            background-color: transparent;
+            cursor: pointer;
+            /* -webkit-appearance: none; */
+        }
+    </style>
+</head>
+
+<body>
+    <p>Instead of using div use button with these css style</p>
+    <button>Click me</button>
+    <h1>Advanced tags</h1>
+    <hr>
+    <abbr title="The Abbriviation">Abbriviation</abbr>
+    <hr>
+    <p>This is the <code>codeTag</code> here.</p>
+    <hr>
+    <kbd>CTRL</kbd> + <kbd>S</kbd>
+    <hr>
+    <input type="text" placeholder="Here are the datalist" list="colors">
+    <datalist id="colors">
+        <option value="red"></option>
+        <option value="brown"></option>
+        <option value="gray"></option>
+        <option value="black"></option>
+    </datalist>
+    <hr>
+    <input type="time" list="hours">
+    <datalist id="hours">
+        <option value="08:00"></option>
+        <option value="12:00"></option>
+        <option value="15:45"></option>
+        <option value="18:00"></option>
+    </datalist>
+    <hr>
+    <input type="range" list="tips" min="0" max="10">
+    <datalist id="tips">
+        <option value="0"></option>
+        <option value="2"></option>
+        <option value="4"></option>
+        <option value="6"></option>
+        <option value="8"></option>
+        <option value="10"></option>
+    </datalist>
+    <hr>
+    <input type="color">
+    <hr>
+    <dialog onclick="closeMe()">
+        <p>This is a dialog box.</p>
+    </dialog>
+    <button onclick="openMe()">Open Dialog</button>
+    <script>
+        function openMe() {
+            document.querySelector('dialog').showModal()
+        }
+        function closeMe() {
+            document.querySelector('dialog').close()
+        }
+    </script>
+    <hr>
+    <div class="popover-container">
+        <button popovertarget="myPopover">Click Popover</button>
+        <div id="myPopover" popover>
+            <strong>Popover Title</strong>
+            <p>This is a simple popover message.</p>
+        </div>
+    </div>
+    <hr>
+    <details>
+        <summary>Deatils Tag, How old am I?</summary>
+        16
+    </details>
+    <hr>
+    <p>The store closes at <time>22:00</time></p>
+    <hr>
+    <ruby>Main Text
+        <rt>Top little text</rt>
+        <rp>Top little text for browser that dont support ruby notations.</rp>
+    </ruby>
+    <hr>
+    <p>Progress bars</p>
+    <progress></progress>
+    <progress max="100" value="30"></progress>
+    <progress max="1000000" value="642564"></progress>
+    <hr>
+    <p>Meter bars</p>
+    <meter min="0" max="100" value="04" low="30" high="60" optimum="90"></meter>
+    <meter min="0" max="100" value="14" low="30" high="60" optimum="90"></meter>
+    <meter min="0" max="100" value="24" low="30" high="60" optimum="90"></meter>
+    <meter min="0" max="100" value="34" low="30" high="60" optimum="90"></meter>
+    <meter min="0" max="100" value="44" low="30" high="60" optimum="90"></meter>
+    <meter min="0" max="100" value="54" low="30" high="60" optimum="90"></meter>
+    <meter min="0" max="100" value="64" low="30" high="60" optimum="90"></meter>
+    <meter min="0" max="100" value="74" low="30" high="60" optimum="90"></meter>
+    <meter min="0" max="100" value="84" low="30" high="60" optimum="90"></meter>
+    <meter min="0" max="100" value="94" low="30" high="60" optimum="90"></meter>
+    <meter min="0" max="100" value="104" low="30" high="60" optimum="90"></meter>
+    <hr>
+    <fieldset>
+        <legend>Title legend goes here</legend>
+        <p>Content of fieldset</p>
+    </fieldset>
+    <hr>
+    <label for="selfie">Selfie</label>
+    <input type="file" accept="image/*" capture="user">
+    <label for="picture">Picture</label>
+    <input type="file" accept="image/*" capture="environment">
+</body>
+
+</html>

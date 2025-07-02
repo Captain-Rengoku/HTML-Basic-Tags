@@ -13,8 +13,15 @@
 
 <body>
     <header>
-        Checkout HTML Interview Questions 
-        <a href="/HTML-Basic-Tags/Machine Codeing Round/index.html"><Button>HTML Interview Questions</Button></a>
+        <div>
+            Checkout HTML Interview Questions 
+            <a href="/HTML-Basic-Tags/Machine Codeing Round/index.html"><Button>HTML Interview Questions</Button></a>
+        </div>
+        <br>
+        <div>
+            Checkout Advanced HTML
+            <a href="advancedhtml.html"><Button>Advanced HTML</Button></a>
+        </div>
     </header>
     <hr size="3" color="red">
     <center>
@@ -42,33 +49,34 @@
         <td>
             <form action="">
                 <h3>INPUT -- type of input tag inside a form inside a table</h3>
-                <input type="text" value="name"><br>
-                <input type="password"><br>
-                <input type="email"><br>
+                <input type="text" placeholder="Enter your name"><br>
+                <input type="password" placeholder="give a password"><br>
+                <input type="email" placeholder="Enter your email"><br>
 
                 <label for="">Gender</label>
                 <input type="radio" name="gender" id="male">
-                <label for="">Male</label>
+                <label for="male">Male</label>
                 <input type="radio" name="gender" id="female">
-                <label for="">Female</label><br>
+                <label for="female">Female</label><br>
 
-                <label for="">Hobbies</label>
-                <input type="checkbox">
-                <label for="">Cricket</label>
-                <input type="checkbox">
-                <label for="">Football</label>
-                <input type="checkbox">
-                <label for="">Hockey</label><br>
+                <input type="checkbox" id="hobbies">
+                <label for="hobbies">Hobbies</label>
+                <input type="checkbox" id="cricket">
+                <label for="cricket">Cricket</label>
+                <input type="checkbox" id="football">
+                <label for="football">Football</label>
+                <input type="checkbox" id="hockey">
+                <label for="hockey">Hockey</label><br>
 
-                <label for="">Date of Birth</label><br>
-                <input type="date"><br>
-                <label for="">date and time</label><br>
-                <input type="datetime-local"><br>
-                <label for="">time</label><br>
-                <input type="time" name="" id=""><br>
+                <label for="dob">Date of Birth</label><br>
+                <input type="date" id="dob"><br>
+                <label for="dat">date and time</label><br>
+                <input type="datetime-local" id="dat"><br>
+                <label for="time">time</label><br>
+                <input type="time" name="" id="time"><br>
 
-                <label for="">color</label><br>
-                <input type="color"><br>
+                <label for="colorPicker">color</label><br>
+                <input type="color" id="colorPicker"><br>
 
                 <label for="">Send your cv</label><br>
                 <input type="file" name="" id=""><br>
@@ -100,7 +108,7 @@
     </h3>
     <form action="">
         <label for="">Username</label><br>
-        <input type="text" value="name" readonly><br>
+        <input type="text" value="John Dow readonly" readonly><br>
         <label for="">Password</label><br>
         <input type="password" size="50"><br>
         <label for="">Email</label><br>
@@ -152,10 +160,10 @@
     <!-- lorem9 creates random 9 word text -->
     <!-- <br/> breaks a line -->
     <p>
-        Lorem ipsum dolor sit, amet elit.<br /> Saepe iure ipsa.
+        Lorem ipsum dolor sit, amet elit.<br /> after br tag <br> Saepe iure ipsa.
     </p>
 
-    <h3>pre displays the content as it is.</h3>
+    <h3>pre displays the content as it is placed.</h3>
     <!-- pre displays the content as it is. -->
     <pre>
         <u>underrline </u>
@@ -170,10 +178,10 @@
         <ins>Inserted text</ins>
         <del>Deleted text</del>
         <button>button tag</button>
-        <cite>Hello friend</cite>
+        <cite>Hello cite tag friend</cite>
         <button>code tag <code>ctrl+k</code></button>
         <kbd>cmd</kbd> + <kbd>c</kbd>
-        <var>Helloooo</var>
+        <var>3.14 or PI</var>
         <q>Quoatation tag</q>
         <samp>different font</samp>
         <select name="" id="">
