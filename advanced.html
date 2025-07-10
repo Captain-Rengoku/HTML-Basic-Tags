@@ -120,6 +120,88 @@
     <input type="file" accept="image/*" capture="user">
     <label for="picture">Picture</label>
     <input type="file" accept="image/*" capture="environment">
+    <hr>
+    <h2>Output Element (Sum Calculator)</h2>
+    <form oninput="result.value = parseInt(a.value)+parseInt(b.value)">
+        <input type="number" id="a" value="5"> +
+        <input type="number" id="b" value="10"> =
+        <output name="result" for="a b">15</output>
+    </form>
+
+    <hr>
+    <h2>Template Tag (Click to clone)</h2>
+    <template id="my-template">
+        <p>This content was cloned from a &lt;template&gt; tag!</p>
+    </template>
+    <button onclick="cloneTemplate()">Clone Template</button>
+    <div id="template-container"></div>
+
+    <script>
+        function cloneTemplate() {
+            const template = document.getElementById("my-template");
+            const clone = template.content.cloneNode(true);
+            document.getElementById("template-container").appendChild(clone);
+        }
+    </script>
+
+    <hr>
+    <h2>Embedded Content with iframe</h2>
+    <iframe src="https://developer.mozilla.org/en-US/" width="100%" height="200" title="MDN"></iframe>
+
+    <hr>
+    <h2>Text Formatting: mark, bdi, bdo</h2>
+    <p>This is a <mark>highlighted</mark> word.</p>
+    <p>Usernames: <bdi>محمد</bdi>, <bdi>John</bdi></p>
+    <p><bdo dir="rtl">This text is right-to-left</bdo></p>
+
+    <hr>
+    <h2>Semantics</h2>
+    <nav>
+        <a href="#">Home</a> |
+        <a href="#">About</a> |
+        <a href="#">Contact</a>
+    </nav>
+    <section>
+        <article>
+            <h3>Article Title</h3>
+            <p>This is the content of an article inside a section.</p>
+        </article>
+        <aside>
+            <p>This is a sidebar or tip.</p>
+        </aside>
+    </section>
+    <footer>
+        <p>&copy; 2025 Advanced HTML Page</p>
+    </footer>
+
+    <hr>
+    <h2>Canvas Drawing</h2>
+    <canvas id="myCanvas" width="200" height="100"></canvas>
+    <script>
+        const canvas = document.getElementById("myCanvas");
+        const ctx = canvas.getContext("2d");
+        ctx.fillStyle = "lightblue";
+        ctx.fillRect(10, 10, 150, 75);
+        ctx.strokeStyle = "black";
+        ctx.strokeRect(10, 10, 150, 75);
+        ctx.font = "14px sans-serif";
+        ctx.fillStyle = "black";
+        ctx.fillText("Canvas Demo", 40, 50);
+    </script>
+
+    <hr>
+    <h2>Audio Element</h2>
+    <audio controls>
+        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+
+    <hr>
+    <h2>Video Element</h2>
+    <video width="320" height="240" controls>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
 </body>
 
 </html>
